@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../css/mui.css"/>
+    <link rel="stylesheet" href="../../css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css"/>
+    <link href="../code/main.css" rel="stylesheet"/>
+    <script src="../../js/jquery-1.12.3.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../iscroll-master/build/iscroll-probe.js"></script>
+    <script src="../../js/style.js"></script>
+    <script src="../code/nearby.js"></script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav header">
+        <li><span class="city">北京三里屯</span><span class="scale iconfont">&#xe69e;</span></li>
+        <li class="input-box"><input type="text" placeholder="找附近的吃喝玩乐" /></li>
+    </header>
+ 	<ul class="content">
+    	<li class="active">享美食</li>
+        <li>住酒店</li>
+        <li>爱玩乐</li>
+        <li>全部</li>
+    </ul>
+    <div class="mui-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+		        <div class="classify">
+		        	<ul class="classify-list">
+			        	<li><a href="#" class="acti">热门</a></li>
+			        	<li><a href="#">小吃快餐</a></li>
+			        	<li><a href="#">面包甜点</a></li>
+			        	<li><a href="#">湘菜</a></li>
+			        	<li><a href="#">川菜</a></li>
+			        	<li><a href="#">日本料理</a></li>
+			        	<li><a href="#">湖北菜</a></li>
+			        	<li><a href="#">东北菜</a></li>
+			        </ul>
+		        </div>
+           		<div class="store">
+	        		<ul class="store-list">
+	        			<!--<li>
+	        				<div class="photo"><img src="../../images/1.jpg"/></div>
+	        				<div class="text">
+	        					<h3>蚝有味烧烤(后瑞店)</h3>
+	        					<span class="people"><span class="color">￥</span>33/人</span>
+	        					<div class="location"><span class="grill">烧烤</span><span>|</span><span class="detailed-address">固戍</span><span class="distance">425m</span></div>
+	        					<div class="like"><span>125</span><span>人点赞</span></div>
+	        					<div class="discount"><span class="quan">券</span><span class="replace">90代100元</span></div>
+	        				</div>
+	        			</li>-->
+	        		</ul>
+	        	</div>
+            </div>
+        	
+        </div>  
+    </div>
+    
+    <script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		});
+		mui.init();
+		mui.plusReady(function(){
+			//H5新增Api，执行地理定位
+//				navigator.geolocation.getCurrentPosition()
+//				navigator.geolocation.watchPosition()
+//				navigator.geolocation.clearWatch()	
+
+			//H5+提供地理定位的API
+//				plus.geolocation.getCurrentPosition()
+//				plus.geolocation.watchPosition()
+//				plus.geolocation.clearWatch()
+			
+			//调用H5新增Api，没有被Mui框架优化，显示使用地理位置页面完整路径
+
+			plus.geolocation.getCurrentPosition(
+				function(position){
+					var arr = JSON.stringify(position.address)
+					console.log(arr);
+					var str=(JSON.parse(arr));
+						console.log(str.city);
+					document.querySelector(".city").innerHTML = str.poiName;
+//						console.log(position.address)
+//						console.log(position.addresses);
+				},
+				function(error){}
+			)
+			
+		})
+	</script>
+</body>
+</html>

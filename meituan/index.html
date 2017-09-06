@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/mui.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/meituan.css" />
+	<script src="js/swiper.js"></script>
+	
+</head>
+<body>
+    
+    <!--底部-->
+	
+	<nav class="mui-bar mui-bar-tab" style="position:absolute;">
+		<a id="home" class="mui-tab-item mui-active">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a id="nearby" class="mui-tab-item">
+			<span class="mui-icon iconfont icon-fujin"></span>
+			<span class="mui-tab-label">附近</span>
+		</a>
+		<a id="goago" class="mui-tab-item">
+			<span class="mui-icon iconfont icon-guangyiguang"></span>
+			<span class="mui-tab-label">逛一逛</span>
+		</a>
+		<a id="indent" class="mui-tab-item">
+			<span class="mui-icon iconfont icon-dingdan"></span>
+			<span class="mui-tab-label">订单</span>
+		</a>
+		<a id="mine" class="mui-tab-item">
+			<span class="mui-icon iconfont icon-wode"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			//参数1：DOM结构对象，或选择器
+			//参数2：
+			mui.init({
+				subpages:[
+					{
+						url:'nearby/html/main.html',
+						id:'nearby',
+						styles:{
+							top:0,
+							bottom:'50px',
+							left:0,
+							width:'100%'	
+						}
+					},
+					{
+						url:'goago/html/main.html',
+						id:'goago',
+						styles:{
+							top:0,
+							bottom:'50px',
+							left:0,
+							width:'100%'	
+						}
+					},
+					{
+						url:'indent/html/main.html',
+						id:'indent',
+						styles:{
+							top:0,
+							bottom:'50px',
+							left:0,
+							width:'100%'	
+						}
+					},
+					{
+						url:'mine/html/main.html',
+						id:'mine',
+						styles:{
+							top:0,
+							bottom:'50px',
+							left:0,
+							width:'100%'	
+						}
+					},
+					{
+						url:'home/index.html',
+						id:'home',
+						styles:{
+							top:0,
+							bottom:'50px',
+							left:0,
+							width:'100%'	
+						}
+					}
+				]
+			});
+			
+			
+//			mui.ready(function(){
+//				mui('.mui-bar-tab').on('tap','mui-tab-item',function(){
+//					console.log('点击了');
+//					console.log(this.id);
+//					
+//				})
+//			})
+			
+			mui.plusReady(function(){
+				mui('.mui-bar-tab').on('tap','.mui-tab-item',function(){
+					console.log('点击了');
+					console.log(this.id);
+					var id = this.id;
+//					console.log(plus.webview.getWebviewById(id))
+					plus.webview.show(id,'fade-in',300,function(){
+						console.log('切换完成')
+					})
+				})
+			})
+	</script>
+</body>
+</html>
+

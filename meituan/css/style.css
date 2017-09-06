@@ -1,0 +1,58 @@
+/* 320-350 */
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+	html{
+		font-size: 42.66px;
+	}
+}
+/* 350-360 */
+@media only screen and (min-width: 350px) and (max-width: 360px) {
+	html{
+		font-size: 46.66px;
+	}
+}
+/* 360-375 */
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+	html{
+		font-size: 48px;
+	}
+}
+/* 375-400 */
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+	html{
+		font-size: 50px;
+	}
+}
+/* 400-420 */
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+	html{
+		font-size: 53.33px;
+	}
+}
+/* 420-640 */
+@media only screen and (min-width: 420px) and (max-width: 640px) {
+	html{
+		font-size: 56px;
+	}
+}
+@media only screen and (min-width: 640px) and (max-width: 750px) {
+	html{
+		font-size: 100px;
+	}
+}
+@media only screen and (min-width: 750px){
+	html{
+		font-size: 100px;
+	}
+}
+
+
+
+/*750   100
+375   50
+
+
+320    x = 100*320/750
+350    x = 100*350/750
+360    x = 100*360/750*/
+
+

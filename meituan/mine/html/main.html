@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/mui.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" href="mine.css" />
+    <script src="../../js/jquery-1.12.3.js"></script>
+    <script src="../../js/style.js"></script>
+</head>
+<body>
+    <header class="header">
+		<ul class="title">
+			<li class="iconfont themes">&#xe606;</li>
+    		<li class="iconfont setting">&#xe60d;</li>
+    		<li class="iconfont remind">&#xe626;</li>
+		</ul>
+    </header>
+    
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <div class="login">
+		    	<span class="head"><img src="../../images/7.png"/></span>
+		    	<span class="click-login">请点击登录</span>
+		    </div>
+		    <div class="entry">
+		    	<li>
+		    		<span class="iconfont size">&#xe622;</span>
+		    		<span>收藏</span>
+		    	</li>
+		    	<li>
+		    		<span class="iconfont size">&#xe670;</span>
+		    		<span>评价</span>
+		    	</li>
+		    	<li>
+		    		<span class="iconfont size">&#xe72a;</span>
+		    		<span>清单</span>
+		    	</li>
+		    </div>
+		    <div class="asset">
+		    	<p class="mine-asset">我的资产</p>
+		    	<ul class="asset-list">
+		    		<li>
+		    			<span class="iconfont purse">&#xe699;</span>
+		    			<span>钱包</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont balance">&#xe645;</span>
+		    			<span>余额</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont voucher">&#xe607;</span>
+		    			<span>抵用券</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont kaba">&#xe617;</span>
+		    			<span>卡包</span>
+		    		</li>
+		    	</ul>
+		    </div>
+        	<div class="asset">
+		    	<p class="mine-asset">美团服务</p>
+		    	<ul class="asset-list">
+		    		<li>
+		    			<span class="iconfont friend">&#xe72c;</span>
+		    			<span>好友去哪</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont member">&#xe60e;</span>
+		    			<span>会员中心</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont phone">&#xe64d;</span>
+		    			<span>手机充值</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont invoice">&#xe63b;</span>
+		    			<span>发票助手</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont card">&#xe6b7;</span>
+		    			<span>办信用卡</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont regard">&#xe66d;</span>
+		    			<span>关于美团</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont service">&#xe620;</span>
+		    			<span>客服中心</span>
+		    		</li>
+		    		<li>
+		    			<span class="iconfont cooperation">&#xe610;</span>
+		    			<span>我要合作</span>
+		    		</li>
+		    	</ul>
+		    </div>
+        </div>
+    </div>
+      
+    <script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+   		mui.init();
+   		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		});
+    </script>
+</body>
+</html>
+

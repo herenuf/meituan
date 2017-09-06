@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css" />
+		<link rel="stylesheet" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+		<link href="goago.css" rel="stylesheet" />
+		<script src="../../js/jquery-1.12.3.js"></script>
+		<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/swiper.js"></script>
+		<script src="../../iscroll-master/build/iscroll-probe.js"></script>
+		<script src="../../js/style.js"></script>
+		<script src="goago.js"></script>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">逛一逛</h1>
+		</header>
+		<ul class="content">
+			<li class="active">精选</li>
+			<li>享美食</li>
+			<li>出去浪</li>
+			<li>约电影</li>
+		</ul>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll list">
+				<!--<ul class="list1">
+					<li>
+						<h3>物价超过80亿，在深圳附近有片蓝色庄园，世界总统也住过！</h3>
+						<div class="images">
+							<span><a href="#"><img src="../../images/1.png"/></a></span>
+							<span><a href="#"><img src="../../images/2.png"/></a></span>
+							<span><a href="#"><img src="../../images/3.png"/></a></span>
+						</div>
+						<p class="location"><span>深圳周边游</span><span class="cil"><span class="cil-lis"></span></span><span class="num">4562</span></p>
+					</li>
+				</ul>-->
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			mui.init()
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+		</script>
+	</body>
+
+</html>

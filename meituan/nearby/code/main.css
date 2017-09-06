@@ -1,0 +1,195 @@
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul, li{
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+	color: #666666;
+}
+body{
+	font-size: 14px;
+}
+.mui-scroll-wrapper{
+	top: 88px;
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+}
+.header li{
+	height: 44px;
+}
+.city{
+	font-size: 14px;
+	line-height: 44px;
+	width: 1.5rem;
+	height: 44px;
+	color: #666666;
+	display:block;
+	overflow:hidden;
+	word-break:keep-all;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	float: left;
+	text-align: center;
+}
+.scale{
+	display: block;
+	float: left;
+	height: 0.44px;
+	line-height:44px;
+	font-size: 12px;
+	color: #666;
+}
+.input-box input{
+	display: block;
+	width: 4.5rem;
+	height: 35px;
+	border-radius: 10px;
+	margin-left: 0.13rem;
+	margin-top: 5px;
+	background: #ebeced;
+	font-size: 12px;
+	border: 0;
+}
+/*内容区*/
+.content{
+	position: absolute;
+	top: 44px;
+	width: 100%;
+	height: 43px;
+	background: #ffffff;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+.content>li{
+	flex: 1;
+	text-align: center;
+	line-height: 43px;
+	color: #666666;
+	
+}
+.content .active{
+	font-weight: 900;
+	color: #fe566d;
+	border-bottom: 2px solid #fe566d;
+}
+.classify-list{
+	position: relative;
+	width: 100%;
+	height: 1.7rem;
+	background: #f1f1f4;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 0.2rem;
+}
+.classify-list li{
+	width:25%;
+	padding-left: 0.12rem;
+	padding-right: 0.12rem;
+}
+.classify-list>li a{
+	display: block;
+	height: 0.57rem;
+	text-align: center;
+	background: #fff;
+	border-radius: 15px;
+	line-height: 0.57rem;
+	border: 1px solid #ccc;
+}
+.classify-list .acti{
+	background: #fe566d;
+	border: 1px solid #fe566d;
+	color: #fff;
+}
+/*商店*/
+.store{
+	position: relative;
+	background: #f4f4f4;
+}
+.store-list li{
+	display: block;
+	background: #fff;
+	height: 3.2rem;
+	margin-bottom: 0.2rem;
+	border-top: 1px solid #ccc;
+}
+.photo{
+	padding-top: 0.2rem;
+	padding-left: 0.2rem;
+	width: 2.25rem;
+	height: 1.95rem;
+	float: left;
+}
+.photo img{
+	width: 100%;
+	
+}
+.text{
+	float: right;
+	width: 4.65rem;
+	height: 100%;
+/*	background: yellow;*/
+	padding-top: 0.2rem;
+	margin-right: 0.3rem;
+}
+.text h3{
+	font-size: 0.4rem;
+}
+.text h3,.text .people,.location,.like{
+	display: block;
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+}
+.location{
+	color: #666;
+}
+.location .distance{
+	display: block;
+	width: 1.1rem;
+	height: 0.35rem;
+	text-align: center;
+	line-height: 0.35rem;
+	background: #f1f1f1;
+	float: right;
+	border-radius: 10px;
+}
+.like{
+	color: #353535;
+}
+.discount{
+	width: 100%;
+	height: 0.65rem;
+	/*background: red;*/
+	line-height: 0.65rem;
+	border-top: 1px solid #ccc;
+	margin-top: 0.2rem;
+	
+}
+.quan{
+	width: 0.4rem;
+	height: 0.4rem;
+	display: block;
+	background: #ff9503;
+	color: #fff;
+	margin-top: 0.15rem;
+	float: left;
+	text-align: center;
+	line-height: 0.4rem;
+	margin-right: 0.15rem;
+}
+.color{
+	color:#06D3B5;
+}
+

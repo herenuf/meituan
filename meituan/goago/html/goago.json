@@ -1,0 +1,50 @@
+{
+
+	
+	"data":[
+		
+		{
+			"img1":"../../images/1.png",
+			"img2":"../../images/2.png",
+			"img3":"../../images/3.png",
+			"h3":"物价超过80亿，在深圳附近有片蓝色庄园，世界总统也住过！",
+			"location":"深圳周边游",
+			"num":"4562"
+		},
+		{
+			"img1":"../../images/4.png",
+			"img2":"../../images/5.png",
+			"img3":"../../images/6.png",
+			"h3":"离广州2.5h，原始海景+童话民宿，这块宝地秒杀广东90%的海滩",
+			"location":"广州周边游",
+			"num":"3047"
+		},
+		{
+			"img1":"../../images/1.jpg",
+			"img2":"../../images/2.jpg",
+			"img3":"../../images/3.jpg",
+			"h3":"物价超过80亿，在深圳附近有片蓝色庄园，世界总统也住过！",
+			"location":"深圳周边游",
+			"num":"4562"
+		},
+		{
+			"img1":"../../home/img/images/4.gif",
+			"img2":"../../home/img/images/4.gif",
+			"img3":"../../home/img/images/4.gif",
+			"h3":"物价超过80亿，在深圳附近有片蓝色庄园，世界总统也住过！",
+			"location":"深圳周边游",
+			"num":"4562"
+		},
+		{
+			"img1":"../../images/1.png",
+			"img2":"../../images/2.png",
+			"img3":"../../images/3.png",
+			"h3":"物价超过80亿，在深圳附近有片蓝色庄园，世界总统也住过！",
+			"location":"深圳周边游",
+			"num":"4562"
+		}
+		
+	]
+	
+
+}
